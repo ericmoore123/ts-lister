@@ -1,4 +1,4 @@
-import ListItem from "./ListModel";
+import ListItem from "./ListItem";
 
 interface List {
     list: ListItem[],
