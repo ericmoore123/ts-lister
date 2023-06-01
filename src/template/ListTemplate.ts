@@ -9,8 +9,10 @@ interface DOMList {
 export default class ListTemplate implements DOMList {
     
     ul: HTMLUListElement;
-
-    // Singleton
+    
+    /* A Singleton is a creational design pattern, which ensures that only one object of its kind 
+    exists and provides a single point of access to it for any other code.
+    */
     static instance: ListTemplate = new ListTemplate();
 
     private constructor(){

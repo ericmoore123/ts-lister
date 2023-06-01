@@ -4,6 +4,7 @@ import ListItem from './model/ListItem';
 import ListTemplate from './template/ListTemplate';
 
 const initApp = (): void => {
+    // Grab singleton instances
     const fullList = FullList.instance;
     const template = ListTemplate.instance;
 

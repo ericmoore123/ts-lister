@@ -11,11 +11,12 @@ interface List {
 
 export default class FullList implements List {
 
-    // Only one list in app, create singleton instance
+    /* A Singleton is a creational design pattern, which ensures that only one object of its kind 
+    exists and provides a single point of access to it for any other code.
+    */
     static instance: FullList = new FullList();
 
     private constructor(private _list: Array<ListItem> = []) { };
-    // private constructor(private _list: ListItem[] = []){};
 
     get list(): Array<ListItem> {
         return this._list;
