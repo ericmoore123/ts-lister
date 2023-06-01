@@ -4,6 +4,7 @@ export interface Item {
     checked: boolean
 }
 
+// Model class for creating list items
 export default class ListItem implements Item {
     constructor(
         private _id: string, 
